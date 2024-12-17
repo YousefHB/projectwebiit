@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Tableau Académique</title>
+  <link rel="shortcut icon" href="img/hero/lgo.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header" class="header">
+    <div class="container container-lg">
+      <div class="header-nav">
+        <img src="img/hero/lgo.png" class="logo" alt="Logo">
+        <nav id="nav" class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Acceuil</a></li>
+            <li class="nav-item"><a href="parcours.html" class="nav-link active">Diplome</a></li>
+            <li class="nav-item"><a href="competence.html" class="nav-link">Compétences</a></li>
+            <li class="nav-item"><a href="stages.html" class="nav-link">Stages</a></li>
+            <li class="nav-item"><a href="passion.html" class="nav-link">Passion</a></li>
+            <li class="nav-item"><a href="temoignage.html" class="nav-link  ">Témoignage</a></li>
+
+            <li class="nav-item"><a href="quizz.html" class="nav-link">Quizz</a></li>
+
+
+            
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenu principal -->
+
+  <main>
+
+    <div class="table-container">
+      <h1 class="page-title">Mes diplômes obtenus</h1>
+      <div class="pp_parcours"><p class="p_parcours"><span class="guillemet">"</span>Après avoir obtenu mon baccalauréat en sciences techniques en 2020-2021 avec mention Bien, j'ai décidé de me spécialiser dans le domaine de l'informatique. J'ai ainsi intégré l'ISIMS, un institut reconnu pour son excellence académique, où j'ai développé des compétences solides et diversifiées. En tant que diplômé en sciences de l'informatique, je suis désormais capable de relever des défis technologiques avec assurance et professionnalisme.</p></div>
+      <table class="academic-table">
+        <thead>
+          <tr>
+            <th>Diplôme</th>
+            <th>Spécialité</th>
+            <th>Établissement</th>
+            <th>Année d'obtention</th>
+            <th>Mention</th>
+            <th>Image</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Licence en sciences de l'informatique</td>
+            <td>Big Data et Analyse de données</td>
+            <td>L’Institut Supérieur d’Informatique et de Multimédia de Sfax (ISIMS)</td>
+            <td>2023-2024</td>
+            <td>Bien</td>
+            <td>
+              <img src="img/works/fac.jpg" alt="Licence" class="table-img" onclick="openModal('img/works/fac.jpg')">
+            </td>
+          </tr>
+          <tr>
+            <td>Baccalauréat</td>
+            <td>Sciences Technique</td>
+            <td>Lycée 9 avril 1938 , Sfax</td>
+            <td>2020-2021</td>
+            <td>Bien</td>
+            <td>
+              <img src="img/works/bac.jpg" alt="Baccalauréat" class="table-img" onclick="openModal('img/works/bac.jpg')">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+ <!-- Modale pour afficher l'image -->
+ <div id="imageModal" class="modal">
+  <span class="close-btn" onclick="closeModal()">&times;</span>
+  <img id="modalImage" src="" alt="Agrandissement de l'image">
+</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="social-links-row footer-social">
+          <a href="https://github.com/YousefHB"><img src="img/social_icons/github.png" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/youssef-hbaieb-50004b223/"><img src="img/social_icons/inkedin.png" alt="LinkedIn"></a>
+          <a href="https://www.facebook.com/youssef.hbaieb.52"><img src="img/social_icons/fb.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/yousef__hbaieb/"><img src="img/social_icons/insta.png" alt="Instagram"></a>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; Copyright Youssef Hbaieb 2024 | Étudiant en génie informatique</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-line"></div>
+
+
+  <script src="js/parcours.js"></script>
+</body>
+</html>

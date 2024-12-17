@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz sur l'Aviation</title>
+  <link rel="stylesheet" href="css/main.css"> 
+  <link rel="shortcut icon" href="img/hero/lgo.png" type="image/x-icon" />
+  <!-- Lien vers le fichier CSS pour le style -->
+  <script defer src="js/quizz.js"></script> <!-- Fichier JavaScript pour la logique du quiz -->
+</head>
+<body>
+  <!-- En-tête de la page -->
+  <header id="header" class="header">
+    <div class="container container-lg">
+      <div class="header-nav">
+        <img src="img/hero/lgo.png" class="logo" alt="Logo">
+        <nav id="nav" class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link">Acceuil</a></li>
+            <li class="nav-item"><a href="parcours.html" class="nav-link ">Diplome</a></li>
+            <li class="nav-item"><a href="competence.html" class="nav-link">Compétences</a></li>
+            <li class="nav-item"><a href="stages.html" class="nav-link">Stages</a></li>
+            <li class="nav-item"><a href="passion.html" class="nav-link ">Passions</a></li>
+
+            <li class="nav-item"><a href="temoignage.html" class="nav-link  ">Témoignage</a></li>
+            <li class="nav-item"><a href="quizz.html" class="nav-link active">Quizz</a></li>
+
+
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenu principal du quiz -->
+  <main class="quiz-main">
+    <div class="quiz-container">
+      <!-- Conteneur de la question -->
+      <div id="question-container" class="question-container">
+        <h2 id="question" class="question-text"></h2>
+        <div id="answers" class="answer-buttons">
+          <!-- Les réponses seront injectées ici via JavaScript -->
+        </div>
+      </div>
+
+      <!-- Bouton pour passer à la question suivante -->
+      <button id="next-button" class="next-button" style="display: none;">Suivant</button>
+
+      <!-- Résultats du quiz -->
+      <div id="result-container" class="result-container" style="display: none;">
+        <h2 class="result-title">Résultats</h2>
+        <p id="score" class="score-text"></p>
+      </div>
+    </div>
+  </main>
+
+  <!-- Pied de page -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-row">
+        <div class="social-links-row footer-social">
+          <a href="https://github.com/YousefHB"><img src="img/social_icons/github.png" alt="GitHub"></a>
+          <a href="https://www.linkedin.com/in/youssef-hbaieb-50004b223/"><img src="img/social_icons/inkedin.png" alt="LinkedIn"></a>
+          <a href="https://www.facebook.com/youssef.hbaieb.52"><img src="img/social_icons/fb.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/yousef__hbaieb/"><img src="img/social_icons/insta.png" alt="Instagram"></a>
+        </div>
+        <div class="footer-copyright">
+          <p>&copy; Copyright Youssef Hbaieb 2024 | Étudiant en génie informatique</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-line"></div>
+</body>
+</html>
